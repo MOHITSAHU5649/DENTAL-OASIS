@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="chat.css">
+  <title>AI Chatbot</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  
+  <div id="nav-container"></div>
+  
+  <div class="chat-container">
+    <div id="chatbox" class="chatbox"></div>
+    <form id="chat-form" class="chat-form">
+      <input type="text" id="message-input" class="message-input" placeholder="Type your message...">
+      <button type="submit" class="send-button">Send</button>
+    </form>
+  </div>
+  <script src="chat.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#nav-container").load("nav1.html");
+    });
+  </script>
+</body>
+</html>
